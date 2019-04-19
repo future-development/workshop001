@@ -14,7 +14,7 @@ function fizzbuzz_3(){
 
     /* ここからコード実装==============================*/
     var result = "";
-    for (int i = 0; i <= 100; i++) {
+    for (var i = 1; i <= 100; i++) {
         var tmp = "";
         if (i % 3 == 0) {
             tmp += "Fizz";
