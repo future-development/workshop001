@@ -14,7 +14,20 @@ function fizzbuzz_3(){
 
     /* ここからコード実装==============================*/
     var result = "";
-
+    for (int i = 0; i <= 100; i++) {
+        var tmp = "";
+        if (i % 3 == 0) {
+            tmp += "Fizz";
+        }
+        if (i % 5 == 0) {
+            tmp += "Buzz";
+        }
+        if (tmp == "") {
+            tmp = i;
+        }
+        result += tmp + '\n';
+    }
+    result += "Finish";
     /* ==============================ここまでコード実装*/
 
     //処理の結果（result）をtextareaの値に設定
