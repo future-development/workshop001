@@ -13,7 +13,26 @@ function fizzbuzz_1(){
     //　・FizzBuzz出力処理の最終行は"Finish"と出力する
 
     /* ここからコード実装==============================*/
-    var result = "";
+    var str = null;
+
+    for(i = 1; i <= 100; i++){
+        if(i % 3 == 0 && i % 5 == 0){
+            str = str + "FizzBuzz" + '\n';
+        }
+        else if(i % 3 == 0){
+            str = str + "Fizz" + '\n';
+        }
+        else if(i % 5 == 0){
+            str = str + "Buzz" + '\n';
+        }
+        else{
+            str = str + i + '\n';
+        }
+    }
+    str = str + "Finish";
+
+
+    var result = str;
 
     /* ==============================ここまでコード実装*/
 
